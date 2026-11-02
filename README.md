@@ -1,11 +1,11 @@
-# gpuops_jd115
+# tensor_parallel_split_grouping
 
 **把GPU 集群运维工程师·张量并行切分策略归并成组并标出每组的代表项。**
 
-`gpuops_jd115` —— 按结构键把条目聚类，标出GPU 集群运维工程师·张量并行切分策略上的同组项与各组的代表样本
+`tensor_parallel_split_grouping` —— 按结构键把条目聚类，标出GPU 集群运维工程师·张量并行切分策略上的同组项与各组的代表样本
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`gpuops_jd115.py` 拷走就能用
+- 单文件，`tensor_parallel_split_grouping.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install jellymicla-gpuops_jd115
+pip install jellymicla-tensor_parallel_split_grouping
 ```
 
 装完直接用命令名调用：
 
 ```bash
-gpuops_jd115 --help
+tensor_parallel_split_grouping --help
 ```
 
-也可以不用安装，直接把 `gpuops_jd115.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `tensor_parallel_split_grouping.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ gpuops_jd115 --help
 ## 用法
 
 ```bash
-python gpuops_jd115.py --file input.txt
-python gpuops_jd115.py --text "示例内容"
-python gpuops_jd115.py --file input.txt --json
+python tensor_parallel_split_grouping.py --file input.txt
+python tensor_parallel_split_grouping.py --text "示例内容"
+python tensor_parallel_split_grouping.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python gpuops_jd115.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_gpuops_jd115.py
+python test_tensor_parallel_split_grouping.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_gpuops_jd115.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/jellymicla/gpuops_jd115>
+- GitHub 仓库：<https://github.com/jellymicla/tensor_parallel_split_grouping>
 
 ---
 
@@ -79,7 +79,7 @@ python test_gpuops_jd115.py
 jellymicla 做GPU 集群运维工程师·张量并行切分策略相关的问题，方向对标网易的中级GPU 集群运维工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://jellymicla.github.io>
-- 仓库：<https://github.com/jellymicla/gpuops_jd115>
+- 仓库：<https://github.com/jellymicla/tensor_parallel_split_grouping>
 
 ## 许可
 
